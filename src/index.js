@@ -1,9 +1,8 @@
 function component() {
-    const element = document.createElement('div');
-
-    element.textContent = 'hello world';
-
-    return element;
+    const mainList = document.createElement('div');
+    mainList.textContent = 'TODOs';
+    
+    return mainList;
 }
 
 document.body.appendChild(component());
