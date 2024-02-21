@@ -1,8 +1,10 @@
 import TodoItem from './todoitem';
+import { addItem, deleteItem } from './render';
 
 function component() {
     const mainList = document.createElement('div');
-    mainList.textContent = 'TODOs';
+    mainList.classList.add('main');
+    mainList.appendChild(document.createElement('ul'));
     
     return mainList;
 }
@@ -18,7 +20,7 @@ document.querySelector('form button').addEventListener("click", function(e) {
     let dueDate = document.querySelector('#due-date').value;
 
     const newTodo = new TodoItem(title, notes, dueDate);
-    console.log(newTodo); // TODO: call render function instead
+    addItem(newTodo);
 
     document.querySelector('form').reset();
 })
