@@ -1,0 +1,25 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "Simple todo list application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --mode=production",
+    "open": "open ./dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmali98/todolist.git"
+  },
+  "author": "Emma Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmali98/todolist/issues"
+  },
+  "homepage": "https://github.com/emmali98/todolist#readme",
+  "devDependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
