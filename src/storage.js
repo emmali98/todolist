@@ -17,6 +17,12 @@ function getTodos () {
         return [];
     }
 }
+
+function deleteTodo (item) {
+    let todos = getTodos();
+    todos = todos.filter((entry) => entry.id != item.id);
+    localStorage.setItem("todolist", JSON.stringify(todos));
+}
  
 // MDN Test for storage
 function storageAvailable(type) {
@@ -46,5 +52,5 @@ function storageAvailable(type) {
     }
   }
 
-export { saveTodo, getTodos };
+export { saveTodo, getTodos, deleteTodo };
   

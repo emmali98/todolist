@@ -1,5 +1,5 @@
 import TodoItem from './todoitem';
-import { renderItem, removeRenderItem } from './render';
+import { renderItem } from './render';
 import { saveTodo, getTodos } from './storage';
 
 function component() {
