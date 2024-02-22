@@ -1,7 +1,7 @@
 // Adds item to TODO list
 // Note: repetitive code here, could be tightened up
-function addItem (item) {
-    const mainList = document.querySelector('.main ul');
+function renderItem (item, mainList) {
+    //const mainList = document.querySelector('.main ul');
     const newTodo = document.createElement('li');
 
     const newTitle = document.createElement('p');
@@ -19,8 +19,8 @@ function addItem (item) {
     mainList.appendChild(newTodo);
 }
 
-function deleteItem (item) {
+function removeRenderItem (item) {
 
 }
 
-export { addItem, deleteItem };
+export { renderItem, removeRenderItem };
